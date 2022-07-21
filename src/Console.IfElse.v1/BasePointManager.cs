@@ -9,9 +9,10 @@ namespace Console.IfElse.v1
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public int GetHitPoint_with_if(PokemonType value)
+        public int GetHitPoint(PokemonType value)
         {
             var point = 0;
+
             if (value == PokemonType.NORMAL)
             {
                 point = 1;

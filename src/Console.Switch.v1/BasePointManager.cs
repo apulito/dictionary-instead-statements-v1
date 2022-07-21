@@ -9,7 +9,7 @@ namespace Console.Switch.v1
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public int GetHitPoint_with_switch(PokemonType value)
+        public int GetHitPoint(PokemonType value)
         {
             var point = 0;
 

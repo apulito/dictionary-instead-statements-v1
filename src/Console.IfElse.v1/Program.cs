@@ -7,7 +7,7 @@ namespace Console.IfElse.v1
         static void Main()
         {
             var hitPointManager = new BasePointManager();
-            var result = hitPointManager.GetHitPoint_with_if(PokemonType.WATER);
+            var result = hitPointManager.GetHitPoint(PokemonType.WATER);
             System.Console.WriteLine($"The result of the operation managed with if else ladder is {result}");
             System.Console.ReadKey();
         }

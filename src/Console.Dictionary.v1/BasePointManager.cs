@@ -18,9 +18,9 @@ namespace Console.Dictionary.v1
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public int GetHitPoint_with_dictionary(PokemonType value)
+        public int GetHitPoint(PokemonType value)
         {
-            return _basePointMapping.ContainsKey(value) ? _basePointMapping[value] : -1;
+            return _basePointMapping.ContainsKey(value) ? _basePointMapping[value] : 0;
         }
     }
 }
