@@ -2,14 +2,14 @@
 
 namespace Console.Switch.v1
 {
-    internal class BasePointManager
+    public class BasePointManager
     {
         /// <summary>
         /// Use switch statements
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static int GetHitPoint_with_switch(PokemonType value)
+        public int GetHitPoint_with_switch(PokemonType value)
         {
             var point = 0;
 

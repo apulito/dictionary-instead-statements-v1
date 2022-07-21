@@ -1,10 +1,15 @@
-﻿namespace Console.Switch.v1
+﻿using Domain.v1;
+
+namespace Console.Switch.v1
 {
     internal class Program
     {
         static void Main()
         {
-            System.Console.WriteLine("Hello, World!");
+            var hitPointManager = new BasePointManager();
+            var result = hitPointManager.GetHitPoint_with_switch(PokemonType.WATER);
+            System.Console.WriteLine($"The result of the operation managed with switch is {result}");
+            System.Console.ReadKey();
         }
     }
 }
