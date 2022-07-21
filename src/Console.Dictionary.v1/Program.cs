@@ -1,10 +1,15 @@
-﻿namespace Console.Dictionary.v1
+﻿using Domain.v1;
+
+namespace Console.Dictionary.v1
 {
     internal class Program
     {
         static void Main()
         {
-            System.Console.WriteLine("Hello, World!");
+            var hitPointManager = new BasePointManager();
+            var result = hitPointManager.GetHitPoint_with_dictionary(PokemonType.WATER);
+            System.Console.WriteLine($"The result of the operation managed with dictionary is {result}");
+            System.Console.ReadKey();
         }
     }
 }
