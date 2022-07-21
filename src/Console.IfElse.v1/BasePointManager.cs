@@ -2,14 +2,14 @@
 
 namespace Console.IfElse.v1
 {
-    internal class BasePointManager
+    public class BasePointManager
     {
         /// <summary>
         /// Use of if-else ladder
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static int GetHitPoint_with_if(PokemonType value)
+        public int GetHitPoint_with_if(PokemonType value)
         {
             var point = 0;
             if (value == PokemonType.NORMAL)
@@ -36,6 +36,8 @@ namespace Console.IfElse.v1
             {
                 point = 6;
             }
+
+            // and soo on
 
             return point;
         }
